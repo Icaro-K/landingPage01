@@ -1,1 +1,1 @@
-Landing page feita para o curso de html e css.
+Landing-page feita para o curso de html e css.
