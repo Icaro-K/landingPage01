@@ -19,13 +19,13 @@
 <body class="mainBG">
     <aside class="menu">
         <div class="mainContent menuContent">
-            <h1><a href="#">LOGO</a></h1>
+            <h1><a href="#home">LOGO</a></h1>
 
             <nav>
                 <ul>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Top 3</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#top3">Top 3</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -35,7 +35,7 @@
 
     <div class="menuSpace"></div>
 
-    <section class="intro mainBG section">
+    <section id="home" class="intro mainBG section">
         <div class="mainContent introContent">
             <div class="introText">
                 <h2>January brings us Firefox 85</h2>
@@ -47,14 +47,61 @@
                     Flash support from Firefox.</p>
             </div>
             <div class="introImg">
-                <img src="./assets/img/undraw_static_assets_rpm6.svg" alt="O desenho de um homem segurando a logo do css3, o desenho de uma mulher empurando a logo do javascript, o desenho de um homem segurando a logo do html5">
+                <img src="./assets/img/undraw_static_assets_rpm6.svg"
+                    alt="O desenho de um homem segurando a logo do css3, o desenho de uma mulher empurando a logo do javascript, o desenho de um homem segurando a logo do html5">
             </div>
         </div>
 
     </section>
 
-    <div class="section whiteBG"></div>
-    <div class="section"></div>
+    <section id="intro" class="whiteBG section">
+        <div class="mainContent top3Content">
+            <h2>Top 3 Jobs</h2>
+            <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and
+                some surprises at the machine’s performance. This post details some background information on the
+                experience of porting Firefox to run natively on these CPUs.
+
+            </p>
+            <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that
+                needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+
+            <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur,
+                and discuss various updater problems we had to deal with. We’ll conclude with the release and an
+                overview of various other improvements that are in the pipeline.</p>
+        </div>
+    </section>
+
+    <section class="gridOne mainBG section" id="top3">
+        <div class="mainContent">
+            <h2 class="gridHeading">Top three jobs</h2>
+            <p class="gridDescription">Uma breve descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Texto 1</h3>
+                    <p>This button would add a box to the row of key content boxes below the intro text. This should put
+                        the box there regardless of where the user is currently writing.</p>
+                </article>
+                <article>
+                    <h3>Texto 2</h3>
+                    <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or
+                        end), what title to give the box, what text to put in the box, and where the box should link to.
+                        The entire box should serve as a link to the destination page.</p>
+                </article>
+                <article>
+                    <h3>Texto 3</h3>
+                    <p>You can also include a type attribute containing the MIME type of the resource, so a browser can
+                        quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery whiteBG section">
+        <div class="mainContent">
+            <h1>Testee</h1>
+        </div>
+    </section>
+
 
 </body>
 
