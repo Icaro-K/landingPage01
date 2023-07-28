@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -60,4 +61,33 @@ a {
 
 p {
     margin-bottom: 3rem;
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.responsiveTable {
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    text-align: left;
+    padding: 1rem;
+    border: .1rem solid var(--light-gray-color);
+}
+
+tfoot td, thead th {
+    background-color: var(--light-gray-color);
 }
